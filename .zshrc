@@ -35,7 +35,7 @@ alias now='date "+%Y-%m-%d %H:%M:%S"'
 # IP adress
 alias ipe='curl ipinfo.io/ip'
 
-# History search)
+# History search
 # Requires peco
 # https://github.com/peco/peco
 function peco-history-selection() {
