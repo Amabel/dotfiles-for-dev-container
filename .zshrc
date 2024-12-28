@@ -35,6 +35,11 @@ alias now='date "+%Y-%m-%d %H:%M:%S"'
 # IP adress
 alias ipe='curl ipinfo.io/ip'
 
+DISABLE_AUTO_UPDATE=true
+DISABLE_UPDATE_PROMPT=true
+
+source $ZSH/oh-my-zsh.sh
+
 # History search
 # Requires peco
 # https://github.com/peco/peco
@@ -46,8 +51,3 @@ function peco-history-selection() {
 
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
-
-DISABLE_AUTO_UPDATE=true
-DISABLE_UPDATE_PROMPT=true
-
-source $ZSH/oh-my-zsh.sh
