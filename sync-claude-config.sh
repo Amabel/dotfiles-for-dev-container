@@ -61,6 +61,15 @@ else
     print_msg $YELLOW "⚠ Templates directory does not exist, skipping"
 fi
 
+# Sync agents directory
+if [ -d "$SOURCE_DIR/agents" ]; then
+    print_msg $BLUE "Syncing agents directory..."
+    rsync -av --delete "$SOURCE_DIR/agents/" "$TARGET_DIR/agents/"
+    print_msg $GREEN "✓ Agents directory synced"
+else
+    print_msg $YELLOW "⚠ Agents directory does not exist, skipping"
+fi
+
 # Sync settings.json file
 if [ -f "$SOURCE_DIR/settings.json" ]; then
     print_msg $BLUE "Syncing settings.json file..."

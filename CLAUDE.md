@@ -32,7 +32,8 @@ The configuration expects these tools to be available:
 
 The `.claude/` directory contains Claude Code configuration including:
 - `commands/` - Custom slash commands for common development tasks
-- `templates/` - Code templates and conventions  
+- `templates/` - Code templates and conventions
+- `agents/` - Custom agents for specialized development tasks
 - `settings.json` - Claude Code settings and preferences
 
 ### Syncing Claude Configuration
@@ -45,7 +46,8 @@ Use the `sync-claude-config.sh` script to sync your local Claude configuration:
 
 This script will copy the following from `~/.claude/` to the repository's `.claude/` directory:
 - commands/ directory
-- templates/ directory  
+- templates/ directory
+- agents/ directory
 - settings.json file
 
 ## Usage in Development Containers
