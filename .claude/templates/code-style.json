@@ -3,7 +3,7 @@
     "formatter": "prettier",
     "linter": "eslint",
     "config": {
-      "semi": true,
+      "semi": false,
       "singleQuote": true,
       "tabWidth": 2,
       "trailingComma": "es5",
@@ -22,7 +22,7 @@
     "formatter": "prettier",
     "linter": "eslint",
     "config": {
-      "semi": true,
+      "semi": false,
       "singleQuote": true,
       "tabWidth": 2,
       "trailingComma": "es5"
